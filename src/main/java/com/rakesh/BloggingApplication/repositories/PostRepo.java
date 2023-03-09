@@ -10,8 +10,8 @@ import com.rakesh.BloggingApplication.entities.User;
 
 public interface PostRepo extends JpaRepository<Post, Integer> {
 
-	List<Post> findAllPostOfUser(User user);
+	List<Post> findByUser(User user);
 
-	List<Post> findAllPostOfCategory(Category category);
+	List<Post> findByCategory(Category category);
 
 }

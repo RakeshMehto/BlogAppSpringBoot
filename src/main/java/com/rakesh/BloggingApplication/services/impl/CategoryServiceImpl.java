@@ -1,4 +1,4 @@
-package com.rakesh.BloggingApplication.services.CategoryServiceImpl;
+package com.rakesh.BloggingApplication.services.Impl;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,22 +1,25 @@
 package com.rakesh.BloggingApplication.payloads;
 
-import java.sql.Date;
-
-import com.rakesh.BloggingApplication.entities.Category;
-import com.rakesh.BloggingApplication.entities.User;
+import java.util.Date;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class PostDto {
 
-	private int postId;
 	@NotEmpty
 	@Size(max = 50, min = 10, message = "Tilte must be 10 to 50 characters")
 	private String title;
 	private String content;
-	private Date addedDate;
-	private Category category;
-	private User user;
+	private String imageName;
+	private Date date;
+	private UserDto user;
+	private CategoryDto category;
 
 }

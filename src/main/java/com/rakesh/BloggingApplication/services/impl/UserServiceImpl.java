@@ -1,4 +1,4 @@
-package com.rakesh.BloggingApplication.services.impl;
+package com.rakesh.BloggingApplication.services.Impl;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 import com.rakesh.BloggingApplication.entities.User;
 import com.rakesh.BloggingApplication.exceptions.ResourceNotFoundException;
 import com.rakesh.BloggingApplication.payloads.UserDto;
-import com.rakesh.BloggingApplication.repositories.userRepo;
+import com.rakesh.BloggingApplication.repositories.UserRepo;
 import com.rakesh.BloggingApplication.services.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
-	private userRepo userRepos;
+	private UserRepo userRepos;
 	@Autowired
 	private ModelMapper modelMapper;
 
