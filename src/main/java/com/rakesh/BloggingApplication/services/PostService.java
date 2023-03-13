@@ -1,8 +1,7 @@
 package com.rakesh.BloggingApplication.services;
 
-import java.util.List;
-
 import com.rakesh.BloggingApplication.payloads.PostDto;
+import com.rakesh.BloggingApplication.payloads.PostResponse;
 
 public interface PostService {
 
@@ -12,12 +11,12 @@ public interface PostService {
 
 	void deletePost(Integer postId);
 
-	List<PostDto> getAllPost();
+	PostResponse getAllPost(Integer pageNumber, Integer pageSize, String sortBy);
 
 	PostDto getPostById(Integer postId);
 
-	List<PostDto> getPostByCategory(Integer categoryId);
+	PostResponse getPostByCategory(Integer categoryId, Integer pageNumber, Integer pageSize);
 
-	List<PostDto> getPostByUser(Integer userId);
+	PostResponse getPostByUser(Integer userId, Integer pageNumber, Integer pageSize);
 
 }

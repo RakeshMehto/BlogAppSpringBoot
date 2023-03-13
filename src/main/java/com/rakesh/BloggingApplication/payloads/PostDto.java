@@ -13,6 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PostDto {
 
+	private Integer postId;
 	@NotEmpty
 	@Size(max = 50, min = 10, message = "Tilte must be 10 to 50 characters")
 	private String title;
