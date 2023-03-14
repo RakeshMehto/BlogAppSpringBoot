@@ -9,7 +9,7 @@
 		<version>2.7.2</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.codewithdurgesh.blog</groupId>
+	<groupId>com.rakesh.blog</groupId>
 	<artifactId>blog-app-apis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>blog-app-apis</name>
